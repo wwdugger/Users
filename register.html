@@ -8,18 +8,27 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to my Awesome User Registration System</h1>
+        <div>
+            <h1>Welcome to my Awesome User Registration System</h1>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
+        </div>
     </header>
-    <main>
-        <div class="form-container">
+    <main class="container">
+        <h2>New User</h2>
+        <button id="newUser">Add new user</button>
+        <div id="userForm" class="form-container control"></div>
+        <div class="form-control">
             <label>Color: </label>
             <input type="color" id="txtColor">
         </div>
-        <div class="form-container">
+        <div class="form-control">
             <label>First Name: </label>
             <input type="text" id="txtFirstName" placeholder="Enter your name">
         </div>
-        <div class="form-container">
+        <div class="form-control">
             <label>Last Name: </label>
             <input type="text" id="txtLastName" placeholder="Enter your name">
         </div>
@@ -44,5 +53,7 @@
 
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/storeManager.js"></script>
+    <script src="scripts/list.js"></script>
 </body>
 </html>
